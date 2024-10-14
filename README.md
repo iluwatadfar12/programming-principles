@@ -536,6 +536,113 @@ Resources
 - [Command Query Separation in Wikipedia](https://en.wikipedia.org/wiki/Command%E2%80%93query_separation)
 - [Command Query Separation by Martin Fowler](https://martinfowler.com/bliki/CommandQuerySeparation.html)
 
+## Principle of Least Privilege
+
+The Principle of Least Privilege states that every program and user of the system should operate using the least set of privileges necessary to complete the job.
+
+Why
+
+- Minimizes the risk of an accidental or malicious security breach by reducing the potential damage that can be caused by a compromised account.
+
+How
+
+- Grant users only the permissions they need for their tasks.
+- Implement role-based access control (RBAC) to manage permissions effectively.
+
+Resources
+
+- [Principle of Least Privilege](https://www.paloaltonetworks.com/cyberpedia/what-is-the-principle-of-least-privilege)
+- [Role-Based Access Control (RBAC)](https://www.digitalguardian.com/blog/what-role-based-access-control-rbac-examples-benefits-and-more)
+
+## Fail-Fast Principle
+
+The Fail-Fast principle emphasizes detecting and responding to failures as early as possible in a system's execution.
+
+Why
+
+- Failing fast helps in identifying problems early, making debugging easier, and preventing compounded failures downstream.
+
+How
+
+- Perform input validation and handle errors at the earliest possible point.
+- Use assertions to catch incorrect assumptions in code.
+
+Resources
+
+- [Fail-Fast Systems on Wikipedia](https://en.wikipedia.org/wiki/Fail-fast_system)
+- [Fail-Fast Versus Fail-Safe](https://www.javatpoint.com/fail-fast-and-fail-safe-iterator-in-java)
+
+## Single Level of Abstraction Principle (SLAP)
+
+A function should operate at a single level of abstraction. If a function mixes different levels of abstraction, it becomes harder to understand, maintain, and refactor.
+
+Why
+
+- Improves readability and maintainability by ensuring each function or module focuses on a single concept at a consistent level of abstraction.
+
+How
+
+- Refactor methods so that lower-level details are handled by helper functions.
+- Group similar levels of abstraction together and separate unrelated concerns.
+
+Resources
+
+- [Clean Code: SLAP](https://patrickkarsh.medium.com/slap-single-layer-of-abstraction-principle-11768a24efe#:~:text=Understanding%20the%20Single%20Layer%20of%20Abstraction%20Principle&text=This%20separation%20allows%20for%20better,understand%2C%20test%2C%20and%20modify.)
+- [Abstraction Principles in Programming](https://stackify.com/oop-concept-abstraction/)
+
+## Principle of Good Enough Software
+
+Not all software needs to be perfect. The principle of good enough software suggests that it is better to release a functional solution quickly and iterate than to aim for perfection at the expense of time and resources.
+
+Why
+
+- Helps meet deadlines without over-engineering.
+- Encourages iterative improvement based on user feedback.
+
+How
+
+- Focus on delivering a working minimum viable product (MVP).
+- Prioritize tasks based on user needs and software performance.
+
+Resources
+
+- [Good Enough Software in Agile](https://medium.com/@myroslavazel/good-enough-principle-aka-enough-is-enough-5eaf60d01152)
+
+## Command-Query Separation (CQS)
+
+The Command-Query Separation principle suggests that every method should either be a command that performs an action or a query that returns data, but not both.
+
+Why
+
+- This separation improves the clarity of code by distinguishing between methods that change state and methods that return information without side effects.
+
+How
+
+- Commands should not return any value (e.g., a method that changes the state).
+- Queries should not have any side effects (e.g., a method that retrieves data).
+
+Resources
+
+- [Command-Query Separation](https://martinfowler.com/bliki/CommandQuerySeparation.html)
+
+## Law of Leaky Abstractions
+
+All non-trivial abstractions, to some degree, are leaky. This principle reminds developers that no abstraction is perfect, and details of the underlying implementation can still affect the abstraction.
+
+Why
+
+- Understanding this law helps developers anticipate and mitigate potential issues caused by relying too heavily on abstractions.
+
+How
+
+- Avoid over-reliance on abstractions that hide complexity poorly.
+- Always be aware of the underlying details, especially when working with databases, APIs, or third-party services.
+
+Resources
+
+- [The Law of Leaky Abstractions](https://www.joelonsoftware.com/2002/11/11/the-law-of-leaky-abstractions/)
+- [Managing Leaky Abstractions in Software Design](https://medium.com/@mesw1/the-law-of-leaky-abstractions-a-guide-for-the-pragmatic-programmer-9bf80545c43f)
+
 ## Murphy's Law
 
 > Anything that can go wrong will go wrong.
